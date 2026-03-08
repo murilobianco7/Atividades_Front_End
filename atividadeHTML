@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material de Estudos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="header">
+            <header>
+                <h1 id="Titulo">Estruturas heterogêneas - STRUCT</h1>
+                <p id="Titulo">Aprenda a utilizar structs para agrupar diferentes tipos de dados</p>
+            </header>
+        </div>
+            
+        <nav>
+            <ul>
+                <li><a href="#Coceito" target="_self">Conceito</a></li>
+                <li><a href="#Forma" target="_self">Forma</a></li>
+                <li><a href="#Inicialização" target="_self">Inicialização</a></li>
+                <li><a href="#Arrays" target="_self">Arrays</a></li>
+                <li><a href="#Typedef" target="_self">Typedef</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+        <section id="Conceito">
+        <h2 id="subtitulo">O conceito de struct</h2>
+            <p>Vetores e matrizes armazenam <b>apenas dados do mesmo tipo</b>.<br> 
+            Porem muitas vezes precisamos amarmazenar informações relacionadas mas de tipos ddiferentes. 
+            </p>
+            <p><b>Struct</b> é uma estrutura que permite agregar diversas infromações,<br> podendo ser de tipos 
+            diferentes, criando um <mark>novo tipo de dado.</mark></p>
+        </section>
+
+        <section id="Forma">
+        <h2 id="subtitulo">Forma Geral da Struct</h2>
+            <p><b>Struct nome_struct {</b><br>
+            tipo identificador1;<br>
+            tipo identificador2;<br>
+            ...<br>
+            tipo identificadorN;<br>
+            };</p>
+            <p id="Dica"><b>Dica:</b> Sempre declare a <b>Struct</b> antes do main(), tornando-a global.</p>
+        </section>
+
+        <section id="Inicialização">
+        <h2 id="subtitulo">Inicialização e Uso</h2>
+            <p>A Inicialização pode ser feita como uma <b>Lista sequencial</b>(.)</p>
+            <p><b>nome</b>{“João“, 20, “99999-99999“};</p>
+            <p><b>Dica: </b>gets é inseguro por não controlar o tamanho do buffer. <br>
+            Recomenda-se usar fgets em aplicações profissionais.</p>
+            <p>Acessamos os dados com o operador <b>ponto</b>(.)</p>
+            <p> p.nome <br>
+            p.idade</p>
+        </section>
+
+        <section id="Arrays">
+        <h2 id="subtitulo">Arrays de struct</h2>
+            <p>Um <b>array de struct</b> é um vetor onde cada posição armazena uma estrutura completa. <br>
+            Isso permite guardar vários registros organizados, como uma lista de alunos ou produtos.</p>
+            <p>Para acessar os dados usamos: <br>
+            nomeDoVetor[indice].campo</p>
+            <b>Exemplo: <br>
+                struct Aluno turma[3];<br>
+                turma[0].idade = 18;
+            </b>
+        </section>
+
+        <section id="Typedef">
+        <h2 id="subtitulo">Typedef</h2>
+                <p>o <b>Typedef</b> é usado para criar um apelido para um tipo de dado. <br>
+                Ele deixa o código mais organizado e fácil de escrever.</p>
+                <p><b>typedef struct { <br>
+                            char nome[50]; <br>
+                            int idade; <br>
+                        } Aluno; <br>
+                        <br>
+                        Aluno a1;</b></p>
+                <p><b>Dica:</b> É muito usado com <b>struct</b>, evitando repetir a palavra <b>struct</b> toda vez.</p>
+        </section>
+
+        <h2 id="subtitulo">Formulario de avaliação</h2>
+        <form>
+            <fieldset>
+                <legend>Deixe sua avaliação</legend>
+                
+                <label> Nota:</label>
+                <input type="radio" name="nota" value="1"> 1
+                <input type="radio" name="nota" value="2"> 2
+                <input type="radio" name="nota" value="3"> 3
+                <input type="radio" name="nota" value="4"> 4
+                <input type="radio" name="nota" value="5"> 5
+            </fieldset>
+
+            <label> Comentario: </label> <br>
+        </form>
+        </div>
+</body>
+</html>
