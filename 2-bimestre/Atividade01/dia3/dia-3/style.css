@@ -1,0 +1,37 @@
+body {
+    background-color: #f2f6ff;
+    font-family: Arial;
+    margin: 0;
+}
+
+nav {
+    background-color: #0f400b;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.secao {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.secao h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #8d9821;
+}
+
+.secao p {
+    color: #000000;
+    text-align: justify;
+    font-size: 16px;
+}
