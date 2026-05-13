@@ -1,0 +1,28 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    margin-top: 40px;
+    background: #ebe5e5;
+}
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 200px;
+}
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    background: #353434;
+    color: white;
+    border-radius: 5px;
+}
+button:hover {
+    background: #4a4848;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
