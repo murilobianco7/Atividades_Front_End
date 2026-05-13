@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+input {
+    padding: 8px;
+    width: 200px;
+}
+button {
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botoes button {
+    margin-left: 3px;
+    font-size: 12px;
+}
+
+.riscado {
+    text-decoration: line-through;
+    color: gray;
+}
