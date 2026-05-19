@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Validador de Cartao</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixa">
+        <h1>Validador de Cartão</h1>
+        <input type="text" id="cartao" placeholder="digite o cartao">
+        <button onclick="validarCartao()">
+            Analisar Cartao
+        </button>
+        <div id="resultado">
+            <p id="status"></p>
+            <p id="bandeira"></p>
+            <p id="setor"></p>
+            <p id="banco"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
