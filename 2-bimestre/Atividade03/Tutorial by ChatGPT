@@ -1,0 +1,172 @@
+Tutorial — Criando um Clone Simples do Termo com React
+Objetivo
+
+Neste tutorial vamos desenvolver uma versão simples do jogo Termo utilizando:
+
+React
+JSX
+CSS
+CodePen
+
+O objetivo é praticar conceitos básicos de front-end e React de forma simples e funcional.
+
+1. Criando o projeto no CodePen
+
+Primeiro, acessar o site:
+
+CodePen
+
+Depois:
+
+clicar em Create
+selecionar Pen
+
+O CodePen já cria automaticamente três áreas:
+
+HTML
+CSS
+JavaScript
+2. Configurando o React
+
+Antes de programar, precisamos configurar o ambiente.
+
+Ativar Babel
+
+Na área JavaScript:
+
+clicar na engrenagem ⚙️
+em “JavaScript Preprocessor”
+selecionar:
+Babel
+
+Isso permite usar JSX no navegador.
+
+3. Adicionando React
+
+Ainda nas configurações do JavaScript:
+
+Em:
+
+Add External Scripts/Pens
+
+Adicionar:
+
+https://unpkg.com/react@18/umd/react.development.js
+
+e depois:
+
+https://unpkg.com/react-dom@18/umd/react-dom.development.js
+
+Depois clicar em:
+
+Save & Close
+4. Criando a estrutura HTML
+
+Na aba HTML vamos criar apenas:
+
+<div id="root"></div>
+
+Essa div será utilizada pelo React para renderizar a aplicação.
+
+5. Criando o visual com CSS
+
+Na aba CSS vamos estilizar:
+
+fundo da página
+título
+quadrados do jogo
+input e botão
+
+O objetivo é deixar a interface parecida com o jogo Termo original.
+
+Também utilizamos:
+
+display: flex
+alinhamento centralizado
+bordas
+tamanhos fixos
+
+para organizar os quadrados.
+
+6. Criando a palavra do jogo
+
+No JavaScript criamos uma constante para armazenar a palavra secreta.
+
+Exemplo:
+
+REACT
+
+Essa palavra será utilizada durante o jogo.
+
+7. Criando o componente principal
+
+Depois criamos um componente React chamado:
+
+App
+
+Esse componente será responsável por:
+
+mostrar o título
+mostrar os quadrados
+controlar as tentativas
+receber as letras digitadas
+8. Utilizando useState
+
+Foi utilizado o hook useState para armazenar:
+
+a letra digitada
+letras acertadas
+quantidade de tentativas
+
+O useState permite atualizar informações dinamicamente na tela.
+
+9. Criando os quadrados automaticamente
+
+Para criar os quadrados do Termo foi utilizado:
+
+split()
+
+e:
+
+map()
+
+O split() separa a palavra em letras.
+
+O map() percorre cada letra e cria um quadrado automaticamente.
+
+Isso evita repetição de código.
+
+10. Verificando as letras
+
+Foi criada uma função responsável por:
+
+verificar se a letra existe na palavra
+adicionar a letra aos acertos
+diminuir as tentativas caso erre
+
+Também foi utilizada a função:
+
+includes()
+
+para verificar se a letra faz parte da palavra.
+
+11. Renderização condicional
+
+Foi utilizada renderização condicional para:
+
+esconder o input quando o jogo termina
+mostrar mensagem de vitória
+mostrar mensagem de derrota
+12. Renderizando a aplicação
+
+Por fim utilizamos o ReactDOM para renderizar o componente principal dentro da div root.
+
+Resultado Final
+
+O projeto final gera:
+
+um clone simples do Termo
+interface interativa
+sistema de tentativa
+verificação de letras
+mensagens de vitória e derrota
